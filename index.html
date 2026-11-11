@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Q Tax · Binnenkort online</title>
+<meta name="description" content="Q Tax: deze website is in opbouw. Binnenkort vind je hier meer.">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:title" content="Q Tax">
+<meta property="og:description" content="Deze website is in opbouw. Binnenkort vind je hier meer.">
+<meta property="og:url" content="https://q-tax.be/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_BE">
+<link rel="canonical" href="https://q-tax.be/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='36' fill='%23facc15' text-anchor='middle'%3EQ%3C/text%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box;margin:0}
+html{background:#0b1220}
+body{min-height:100vh;min-height:100dvh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#e6edf6;background:#0b1220;display:flex;flex-direction:column;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.3;animation:drift 18s ease-in-out infinite alternate}
+.g1{width:420px;height:420px;background:#eab308;top:-120px;left:-100px}
+.g2{width:380px;height:380px;background:#f59e0b;bottom:-140px;right:-80px;animation-delay:-9s}
+@keyframes drift{to{transform:translate(60px,40px) scale(1.1)}}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(circle at center,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(circle at center,#000 30%,transparent 75%)}
+main{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1.5rem;width:100%;max-width:600px;margin:0 auto}
+.badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#fde68a;background:rgba(250,204,21,.1);border:1px solid rgba(250,204,21,.35);padding:.45rem 1rem;border-radius:999px;margin-bottom:1.6rem}
+.dot{width:8px;height:8px;border-radius:50%;background:#facc15;box-shadow:0 0 10px #facc15;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.3;transform:scale(.7)}}
+h1{font-size:clamp(3.2rem,13vw,5rem);font-weight:800;letter-spacing:-.03em;line-height:1}
+h1 span{background:linear-gradient(90deg,#fde047,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.line{width:56px;height:3px;border-radius:3px;background:linear-gradient(90deg,#fde047,#f59e0b);margin:1.6rem auto 0}
+p{margin-top:1.4rem;font-size:clamp(1rem,3.6vw,1.15rem);line-height:1.65;color:#9aa8bb;max-width:30ch}
+.bar{margin:2.4rem auto 0;width:min(220px,60vw);height:4px;border-radius:4px;background:rgba(255,255,255,.08);overflow:hidden}
+.bar i{display:block;height:100%;width:40%;border-radius:4px;background:linear-gradient(90deg,#fde047,#f59e0b);animation:load 2.4s ease-in-out infinite}
+@keyframes load{0%{transform:translateX(-110%)}100%{transform:translateX(280%)}}
+footer{position:relative;z-index:1;text-align:center;padding:1.4rem 1rem;font-size:.85rem;color:#5d6b80}
+@media (max-width:600px){
+.g1{width:280px;height:280px;top:-90px;left:-90px}
+.g2{width:260px;height:260px;bottom:-100px;right:-90px}
+.grid{background-size:36px 36px}
+.badge{font-size:.72rem;margin-bottom:1.3rem}
+}
+@media (max-height:480px){main{padding:1.5rem}.bar{margin-top:1.4rem}p{margin-top:1rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+<main>
+<div class="badge"><span class="dot"></span>In opbouw</div>
+<h1><span>Q Tax</span></h1>
+<div class="line"></div>
+<p>We zijn achter de schermen aan het bouwen. Binnenkort vind je hier meer.</p>
+<div class="bar" role="progressbar" aria-label="Website in opbouw"><i></i></div>
+</main>
+<footer>&copy; <span id="y">2026</span> Q Tax</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
